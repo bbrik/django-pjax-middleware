@@ -77,12 +77,23 @@ Usage
       ...
     {% endblock content %}
 
-
-#. The middleware will set ``base`` variable to the correct template name,
-based on the request header
-
 #. Add ``data-pjax`` to any link you want to load using pjax::
 
     <a data-pjax href="{% url 'home' %}">
       Home
     </a>
+
+
+Custom settings
+***************
+
+BASE_TEMPLATE
++++++++++++++
+
+Sets the full reload base template name. Default is ``base.html``.
+
+PJAX_BASE_TEMPLATE
+++++++++++++++++++
+
+Sets the pjax reload template name. Default is ``pjax_base.html``.
+
