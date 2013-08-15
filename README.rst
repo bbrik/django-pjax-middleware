@@ -9,7 +9,9 @@ Installing django-pjax-middleware
 
     pip install git+https://github.com/bbrik/django-pjax-middleware.git
 
-#. Add ``pjax`` to your ``INSTALLED_APPS`` in settings.py::
+#. Add ``pjax`` to your ``INSTALLED_APPS`` in settings.py:
+
+.. code-block:: python
 
     INSTALLED_APPS = (
         ...
@@ -22,7 +24,9 @@ Installing django-pjax-middleware
 Usage
 ~~~~~
 
-#. Add a template for full page render, default name is ``base.html``::
+#. Add a template for full page render, default name is ``base.html``:
+
+.. code-block:: html
 
     {% load staticfiles %}
 
@@ -52,7 +56,9 @@ Usage
     </html>
 
 
-#. Add a template for pjax render, default name is ``pjax_base.html``::
+#. Add a template for pjax render, default name is ``pjax_base.html``:
+
+.. code-block:: html
 
     {% load staticfiles %}
 
@@ -65,7 +71,9 @@ Usage
     {% endblock content %}
 
 
-#. Use the variable ``base`` as the base for your templates::
+#. Use the variable ``base`` as the base for your templates:
+
+.. code-block:: html
 
     {% extends base %}
 
@@ -77,7 +85,9 @@ Usage
       ...
     {% endblock content %}
 
-#. Add ``data-pjax`` to any link you want to load using pjax::
+#. Add ``data-pjax`` to any link you want to load using pjax:
+
+.. code-block:: html
 
     <a data-pjax href="{% url 'home' %}">
       Home
