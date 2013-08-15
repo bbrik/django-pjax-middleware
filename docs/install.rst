@@ -7,7 +7,7 @@ Installing django-pjax-middleware
 
 #. Install using pip::
 
-    pip install git+ssh://git@github.com/bbrik/django-pjax-middleware.git
+    pip install git+https://github.com/bbrik/django-pjax-middleware.git
 
 #. Add ``pjax`` to your ``INSTALLED_APPS`` in settings.py::
 
