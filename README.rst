@@ -48,7 +48,13 @@ Usage
         <script type="text/javascript" src="{% static 'js/jquery-1.9.1.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/jquery.pjax.js' %}"></script>
         <script type="text/javascript">
-          $(document).pjax('a[data-pjax]', '#pjax-container', {
+          $document = $(document);
+          
+          $document.on('ready pjax:end', function() {
+            // Use this for document ready code
+          });
+        
+          $document.pjax('a[data-pjax]', '#pjax-container', {
             timeout: 3000
           });
         </script>
