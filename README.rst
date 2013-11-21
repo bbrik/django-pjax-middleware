@@ -9,13 +9,13 @@ Installing django-pjax-middleware
 
     pip install git+https://github.com/bbrik/django-pjax-middleware.git
 
-#. Add ``pjax`` to your ``INSTALLED_APPS`` in settings.py:
+#. Add ``PjaxMiddleware`` to your ``MIDDLEWARE_CLASSES`` in settings.py:
 
 .. code-block:: python
 
-    INSTALLED_APPS = (
+    MIDDLEWARE_CLASSES = (
         ...
-        'pjax',
+        'pjax.middleware.PjaxMiddleware',
     )
 
 #. Add ``jquery`` and ``jquery_pjax`` to your static files
