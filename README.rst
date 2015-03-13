@@ -122,7 +122,7 @@ PJAX_VERSION
 
 Sets the layout version for your site.
 When you update your site layout, you should update this.
-Should be the same value of the meta keyword.
+Should be the same value of the meta attribute in your base.html head.
 This is a mechanism to trigger a full page reload when the site layout changes.
 See pjax docs.
 
