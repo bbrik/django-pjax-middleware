@@ -37,6 +37,10 @@ Usage
           {% block title %}
           {% endblock title %}
         </title>
+        
+        {# should set layout version through a template context processor #}
+        {# see PJAX_VERSION bellow #}
+        <meta http-equiv="x-pjax-version" content="{{ version }}">
       </head>
 
       <body>
@@ -112,4 +116,13 @@ PJAX_BASE_TEMPLATE
 ++++++++++++++++++
 
 Sets the pjax reload template name. Default is ``pjax_base.html``.
+
+PJAX_VERSION
+++++++++++++
+
+Sets the layout version for your site.
+When you update your site layout, you should update this.
+Should be the same value of the meta keyword.
+This is a mechanism to trigger a full page reload when the site layout changes.
+See pjax docs.
 
